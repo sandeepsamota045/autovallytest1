@@ -14,11 +14,11 @@ import bookingRoutes from "./routes/bookingRoutes.js";
 
 // const DB_HOST = process.env.BC_DB_HOST;
 // const DB_PORT = process.env.BC_DB_PORT;
-const DB_SSL = process.env.BC_DB_SSL.toLowerCase() === "true";
+const DB_SSL = process?.env?.BC_DB_SSL?.toLowerCase() === "true";
 const DB_SSL_KEY = process.env.BC_DB_SSL_KEY;
 const DB_SSL_CERT = process.env.BC_DB_SSL_CERT;
 const DB_SSL_CA = process.env.BC_DB_SSL_CA;
-const DB_DEBUG = process.env.BC_DB_DEBUG.toLowerCase() === "true";
+const DB_DEBUG = process?.env?.BC_DB_DEBUG?.toLowerCase() === "true";
 // const DB_AUTH_SOURCE = process.env.BC_DB_AUTH_SOURCE;
 // const DB_USERNAME = process.env.BC_DB_USERNAME;
 // const DB_PASSWORD = process.env.BC_DB_PASSWORD;
