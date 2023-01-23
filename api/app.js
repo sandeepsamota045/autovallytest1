@@ -3,7 +3,7 @@ import fs from 'fs';
 import https from 'https';
 
 const PORT = parseInt(process.env.BC_PORT) || 4000;
-const HTTPS = process.env.BC_HTTPS.toLocaleLowerCase() === 'true';
+const HTTPS = process?.env?.BC_HTTPS?.toLocaleLowerCase() === 'true';
 const PRIVATE_KEY = process.env.BC_PRIVATE_KEY;
 const CERTIFICATE = process.env.BC_CERTIFICATE;
 
