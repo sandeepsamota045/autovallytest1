@@ -15,7 +15,7 @@ import mongoose from "mongoose";
 import * as Helper from "../common/Helper.js";
 
 const DEFAULT_LANGUAGE = process.env.BC_DEFAULT_LANGUAGE;
-const HTTPS = process.env.BC_HTTPS.toLowerCase() === "true";
+const HTTPS = process?.env?.BC_HTTPS?.toLowerCase() === "true";
 const JWT_SECRET = process.env.BC_JWT_SECRET;
 const JWT_EXPIRE_AT = parseInt(process.env.BC_JWT_EXPIRE_AT);
 const SMTP_HOST = process.env.BC_SMTP_HOST;
